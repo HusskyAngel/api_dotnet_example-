@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/exposicion.props" />
+</Project>
