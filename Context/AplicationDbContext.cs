@@ -19,4 +19,5 @@ namespace Aplication.Context
         protected override void Onconfiguring(DbContextOptionsBuilder options){
            options.UseSqlite(Configuration.GetConnectionString("WebApiDatabase"));
         }
+   }
 } 

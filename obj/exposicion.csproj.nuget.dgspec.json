@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/mvc/Escritorio/semestre/web/exposicion/exposicion.csproj": {}
+    "/home/dracdev/uv/www/api_dotnet_example-/exposicion.csproj": {}
   },
   "projects": {
-    "/home/mvc/Escritorio/semestre/web/exposicion/exposicion.csproj": {
+    "/home/dracdev/uv/www/api_dotnet_example-/exposicion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/mvc/Escritorio/semestre/web/exposicion/exposicion.csproj",
+        "projectUniqueName": "/home/dracdev/uv/www/api_dotnet_example-/exposicion.csproj",
         "projectName": "exposicion",
-        "projectPath": "/home/mvc/Escritorio/semestre/web/exposicion/exposicion.csproj",
-        "packagesPath": "/home/mvc/.nuget/packages/",
-        "outputPath": "/home/mvc/Escritorio/semestre/web/exposicion/obj/",
+        "projectPath": "/home/dracdev/uv/www/api_dotnet_example-/exposicion.csproj",
+        "packagesPath": "/home/dracdev/.nuget/packages/",
+        "outputPath": "/home/dracdev/uv/www/api_dotnet_example-/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/mvc/.nuget/NuGet/NuGet.Config"
+          "/home/dracdev/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -80,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/7.0.105/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
         }
       }
     }

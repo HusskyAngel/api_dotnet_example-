@@ -4,6 +4,6 @@ namespace Estudiantes.Models
         public int Id{get;set;}  
         public string Nombre{get;set;}  
         public string Apellido{get;set;} 
-        public string int IdCurso{get;set;}
+        public int IdCurso{get;set;}
     }
 }

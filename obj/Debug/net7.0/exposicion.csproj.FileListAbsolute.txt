@@ -1,0 +1,7 @@
+/home/dracdev/uv/www/api_dotnet_example-/obj/Debug/net7.0/exposicion.csproj.AssemblyReference.cache
+/home/dracdev/uv/www/api_dotnet_example-/obj/Debug/net7.0/exposicion.GeneratedMSBuildEditorConfig.editorconfig
+/home/dracdev/uv/www/api_dotnet_example-/obj/Debug/net7.0/exposicion.AssemblyInfoInputs.cache
+/home/dracdev/uv/www/api_dotnet_example-/obj/Debug/net7.0/exposicion.AssemblyInfo.cs
+/home/dracdev/uv/www/api_dotnet_example-/obj/Debug/net7.0/exposicion.csproj.CoreCompileInputs.cache
+/home/dracdev/uv/www/api_dotnet_example-/obj/Debug/net7.0/exposicion.MvcApplicationPartsAssemblyInfo.cs
+/home/dracdev/uv/www/api_dotnet_example-/obj/Debug/net7.0/exposicion.MvcApplicationPartsAssemblyInfo.cache
