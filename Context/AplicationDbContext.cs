@@ -1,14 +1,14 @@
 using Microsoft.EntityFrameworkCore;
-using Cursos.Models;  
-using Estudiantes.Models; 
-using Cursos.Models;
+ 
+using Models; 
+using Models;
 
 namespace Aplication.Context
 {
     public class ApplicationDbContext : DbContext{
 
         public DbSet<Estudiantes> Estudiantes{get;set;}
-        public DbSet<> Estudiantes{get;set;}
+        public DbSet<Cursos> Cursos{get;set;}
 
         protected readonly IConfiguration Configuration;
 
@@ -16,7 +16,8 @@ namespace Aplication.Context
            Configuration=configuration; 
         }
 
-        protected override void Onconfiguring(DbContextOptionsBuilder options){
+        protected override void OnConfiguring(DbContextOptionsBuilder options){
            options.UseSqlite(Configuration.GetConnectionString("WebApiDatabase"));
         }
+   }
 } 

@@ -1,4 +1,4 @@
-namespace Cursos.Models 
+namespace Models 
 {
     public class Cursos{
         public int Id{get;set;}  
