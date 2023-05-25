@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/mvc/Escritorio/semestre/web/exposicion/exposicion.csproj": {}
+    "/home/HusskyAngel/Escritorio/exposicion/exposicion.csproj": {}
   },
   "projects": {
-    "/home/mvc/Escritorio/semestre/web/exposicion/exposicion.csproj": {
+    "/home/HusskyAngel/Escritorio/exposicion/exposicion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/mvc/Escritorio/semestre/web/exposicion/exposicion.csproj",
+        "projectUniqueName": "/home/HusskyAngel/Escritorio/exposicion/exposicion.csproj",
         "projectName": "exposicion",
-        "projectPath": "/home/mvc/Escritorio/semestre/web/exposicion/exposicion.csproj",
-        "packagesPath": "/home/mvc/.nuget/packages/",
-        "outputPath": "/home/mvc/Escritorio/semestre/web/exposicion/obj/",
+        "projectPath": "/home/HusskyAngel/Escritorio/exposicion/exposicion.csproj",
+        "packagesPath": "/home/HusskyAngel/.nuget/packages/",
+        "outputPath": "/home/HusskyAngel/Escritorio/exposicion/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/mvc/.nuget/NuGet/NuGet.Config"
+          "/home/HusskyAngel/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"

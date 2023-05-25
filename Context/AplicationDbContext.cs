@@ -1,23 +1,48 @@
+using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
- 
 using Models; 
-using Models;
 
 namespace Aplication.Context
 {
     public class ApplicationDbContext : DbContext{
 
-        public DbSet<Estudiantes> Estudiantes{get;set;}
-        public DbSet<Cursos> Cursos{get;set;}
+        public DbSet<Estudiantes> Estudiantes { get; set; }
 
-        protected readonly IConfiguration Configuration;
-
-        public ApplicationDbContext(IConfiguration configuration){
-           Configuration=configuration; 
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+        {
         }
+         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+         {
+            var connectionStringBuilder = new SqliteConnectionStringBuilder { DataSource = "base_datos.db" };
+            var connectionString = connectionStringBuilder.ToString();
+            var connection = new SqliteConnection(connectionString);
 
-        protected override void OnConfiguring(DbContextOptionsBuilder options){
-           options.UseSqlite(Configuration.GetConnectionString("WebApiDatabase"));
+            optionsBuilder.UseSqlite(connection)
+            .EnableSensitiveDataLogging()
+            .EnableDetailedErrors()
+            .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
+
+            optionsBuilder.UseSqlite(connection)
+            .EnableSensitiveDataLogging()
+            .EnableDetailedErrors()
+            .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
+         }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+
+            modelBuilder.Entity<Estudiantes>()
+                  .HasKey(e => e.Id);
+
+            modelBuilder.Entity<Estudiantes>()
+                  .Property(e => e.Nombre)
+                  .IsRequired();
+
+            base.OnModelCreating(modelBuilder);
+
         }
+         public void EnsureTablesCreated()
+         {
+            Database.EnsureCreated();
+         }
    }
 } 
